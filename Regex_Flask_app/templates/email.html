@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email_validation</title>
+    <a href="/" class="home-button">Home</a> <!-- Home button -->
+</head>
+<body>
+    <h1>E-mail Validator</h1>
+<div>
+<form action="/validate" method="post">
+    <label for = 'email_val'> Enter Your E-mail ID </label> <br>
+    <input type="text" name="email_val" placeholder="Email to validate"> <br><br>
+    <button type="submit" name="check">Validate</button>
+</form>
+</div>    
+
+<h3> {{result}} </h3>
+     
+    
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Arrange items in a column */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center; /* Center text */
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        div {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Set a fixed width for the container */
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        /* Home button styling */
+        .home-button {
+            position: absolute; /* Position it at the top left */
+            top: 20px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+            background-color: #4CAF50; /* Button color */
+            color: white; /* Text color */
+            padding: 10px 15px; /* Padding */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            font-size: 14px; /* Font size */
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #555;
+        }
+</style>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matched Result</title>
+    
+</head>
+<body>
+    <a href="/" class="home-button">Home</a> <!-- Home button -->
+    <div class="result-container">
+        {% if not_found %}
+            <h1 style="color: #FF0000;">No Matching Pattern!!!</h1> <!-- Red color for No Matching Pattern -->
+        {% else %}
+            <h1>Pattern Found</h1>
+            <h3>{{ number }} Matches Found</h3>
+            <ul>
+                {% for i in match_list %}
+                    {% if i|length < 10 %}
+                        <li class="short">{{ i }}</li>
+                    {% elif i|length < 20 %}
+                        <li class="medium">{{ i }}</li>
+                    {% else %}
+                        <li class="long">{{ i }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Home button styling */
+    .home-button {
+        position: absolute; /* Position it at the top left */
+        top: 20px; /* Adjust as needed */
+        left: 20px; /* Adjust as needed */
+        background-color: #008CBA; /* Button color */
+        color: white; /* Text color */
+        padding: 10px 15px; /* Padding */
+        text-decoration: none; /* Remove underline */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        font-size: 14px; /* Font size */
+    }
+
+    /* Hover effect for the home button */
+    .home-button:hover {
+        background-color: #005f75; /* Darker shade on hover */
+    }
+
+    /* Different color for h1 */
+    h1 {
+        color: #008CBA; /* Blue color for Pattern Found/No Matching Pattern */
+    }
+
+    /* Different color for h3 */
+    h3 {
+        color: #4CAF50; /* Green color for the number of matches */
+    }
+
+    /* Default text color for the rest of the content */
+    .result-container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        color: #666; /* Gray color for the rest of the content */
+        position: relative; /* Position relative for absolute positioning of home button */
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        background-color: #fff;
+        padding: 10px 15px;
+        margin: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: block; /* Ensure items stack vertically */
+        border-radius: 5px;
+        word-wrap: break-word; /* Allows long words to wrap */
+    }
+
+    /* Styles based on content length */
+    .short {
+        border: 1px solid #ccc;
+    }
+
+    .medium {
+        border: 2px solid #aaa;
+        border-radius: 10px;
+    }
+
+    .long {
+        border: 3px solid #666;
+        border-radius: 15px;
+    }
+</style>
