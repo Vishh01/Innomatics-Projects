@@ -10,7 +10,7 @@ import streamlit as st
 import base64
 
 # Configure the Google AI API key
-genai.configure(api_key="AIzaSyB4tK6azgrb_-VQSgsNT2BW29ABjwaxJII")
+genai.configure(api_key="Your API Key")
 
 # def analyze_code(code):
 #     """Analyze the submitted code using Google AI API."""
