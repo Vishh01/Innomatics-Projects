@@ -6,8 +6,8 @@ The **Python Code Reviewer Application** is a web-based tool designed to help de
 
 ## Usage
 **Enter Your Code:** Paste or type your Python code in the provided text area.
-**Submit for Review:** Click the "Review Code" button to analyze your code.
-**Receive Feedback:** Review the feedback provided by the AI, which includes bug reports and suggestions for improvement.
+- **Submit for Review:** Click the "Review Code" button to analyze your code.
+- **Receive Feedback:** Review the feedback provided by the AI, which includes bug reports and suggestions for improvement.
 
 ## Technologies Used
 
