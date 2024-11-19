@@ -5,7 +5,7 @@
 The **Python Code Reviewer Application** is a web-based tool designed to help developers and students analyze their Python code for potential bugs and improvements. Built using **Streamlit** and the **Google Generative AI API**, this application provides detailed feedback on submitted code, including bug reports and suggestions for enhancements.
 
 ## Usage
-**Enter Your Code:** Paste or type your Python code in the provided text area.
+- **Enter Your Code:** Paste or type your Python code in the provided text area.
 - **Submit for Review:** Click the "Review Code" button to analyze your code.
 - **Receive Feedback:** Review the feedback provided by the AI, which includes bug reports and suggestions for improvement.
 
