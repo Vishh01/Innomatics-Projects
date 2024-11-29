@@ -1,6 +1,6 @@
 # Project Title
 
-![Project Banner](.jpg) <!-- Replace with the path to your image -->
+![Project Banner](VissAssist- Using GoogleAI/1.PNG) <!-- Replace with the path to your image -->
 
 ## Description
 
