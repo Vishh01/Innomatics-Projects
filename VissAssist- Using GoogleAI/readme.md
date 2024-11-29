@@ -1,6 +1,6 @@
 # Project Title
 
-![Project Banner](VissAssist-Using GoogleAI/1.PNG) <!-- Replace with the path to your image -->
+![Project Banner](https://raw.githubusercontent.com/Vishh01/Innomatics-Projects/main/VissAssist-Using-GoogleAI/1.PNG)
 
 ## Description
 
