@@ -130,13 +130,6 @@ st.markdown("<h1 style='text-align: center; color: #32CD32;'>   VissAssist 🔍<
 st.markdown("<div style='text-align: center; color: #B0B0B0;'>Empowering Accessibility Through Image Intelligence. </div>", unsafe_allow_html=True)
 
 # Sidebar
-
-col1, col2, col3 = st.columns([1, 1, 1])  # Adjust the ratios as needed
-
-with col2:
-    # Center column
-    st.image('2.png', width=150)  # Adjust width as needed
-
 # Using object notation
 st.sidebar.title(':blue[📖 About]')
 add_selectbox = st.sidebar.selectbox(
