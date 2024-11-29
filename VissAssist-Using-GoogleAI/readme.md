@@ -1,4 +1,4 @@
-# Project Title
+# Project Title - VissAssist
 
 ![Project Banner](https://raw.githubusercontent.com/Vishh01/Innomatics-Projects/main/VissAssist-Using-GoogleAI/1.PNG)
 
